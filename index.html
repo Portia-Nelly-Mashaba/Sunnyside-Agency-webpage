@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Sunnyside Agency | Landing Page</title>
+
+  <!-- Favicon -->
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- other links -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:ital,wght@0,900;1,700&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+ 
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <header>
+      <nav class="navbar">
+        <a href="#" class="navbar-brand">
+          <img src="images/logo.svg" alt="Sunnyside Logo">
+        </a>
+
+        <ul class="navbar-nav">
+          <li>
+            <a href="#about" class="nav-link">About</a>
+          </li>
+
+          <li>
+            <a href="#services" class="nav-link">Services</a>
+          </li>
+
+          <li>
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+
+          <li>
+            <button class="btn">Contact</button>
+          </li>
+        </ul>
+
+        <button class="nav-toggle-btn">
+          <span class="line one"></span>
+          <span class="line two"></span>
+          <span class="line three"></span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home">
+      <!-- To decide -->
+      <source media="(max-width: 768px)" srcset="images/mobile/image-header.jpg">
+      <source media="(min-width: 769px)" srcset="images/desktop/image-header.jpg">
+      <picture>
+        <img src="images/mobile/image-header.jpg" class="home-banner" alt="banner">
+      </picture>
+
+      <div class="home-content">
+        <h1 class="home-heading">We are creatives</h1>
+        <a href="#about">
+          <img src="images/icon-arrow-down.svg" class="arrow-down" alt="arrow">
+        </a>
+      </div>
+    </section>
+
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="about-card grid-pos-lg">
+      <source media="(max-width: 768px)" srcset="images/mobile/image-transform.jpg">
+      <source media="(min-width: 769px)" srcset="images/desktop/image-transform.jpg">
+      <picture>
+        <img src="images/mobile/image-transform.jpg" class="about-img" alt="about image">
+      </picture>
+    </div>
+    <div class="about-content">
+      <h2 class="about-header">Transform your brand</h2>
+
+      <p class="about-p">We are a full-service creative agency specializing in helping brands grow fast. 
+        Engage your clients through compelling visuals that do most of the marketing for you.</p>
+
+      <a href="#" class="about-link yellow">Learn more</a>
+    </div>
+
+
+    <div class="about-card">
+      <source media="(max-width: 768px)" srcset="images/mobile/image-stand-out.jpg">
+      <source media="(min-width: 769px)" srcset="images/desktop/image-stand-out.jpg">
+      <picture>
+        <img src="images/mobile/image-stand-out.jpg" class="about-img" alt="about image">
+      </picture>
+    </div>
+    <div class="about-content">
+      <h2 class="about-header">Stand out to the right audience</h2>
+
+      <p class="about-p"> Using a collaborative formula of designers, researchers, 
+        photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+      </p>
+
+      <a href="#" class="about-link pink">Learn more</a>
+    </div>
+
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="service-box">
+      <div class="img-box">
+        <picture>
+          <source media="(max-width: 768px)" srcset="images/mobile/image-graphic-design.jpg">
+          <source media="(min-width: 769px)" srcset="images/desktop/image-graphic-design.jpg">
+
+          <img src="images/mobile/image-graphic-design.jpg" class="services-img" alt="Graphic design">
+        </picture>
+      </div>
+      <div class="service-content">
+        <h3 class="service-h3 cyan">Graphic design</h3>
+        <p class="service-p cyan">Great design makes you memorable. We deliver artwork that underscores 
+          your brand message and captures potential clients’ attention.
+        </p>
+      </div>
+    </div>
+
+    <div class="service-box">
+      <div class="img-box">
+        <picture>
+          <source media="(max-width: 768px)" srcset="images/mobile/image-photography.jpg">
+          <source media="(min-width: 769px)" srcset="images/desktop/image-photography.jpg">
+
+          <img src="images/mobile/image-photography.jpg" class="services-img" alt="Graphic design">
+        </picture>
+      </div>
+      <div class="service-content">
+        <h3 class="service-h3 blue">Photography</h3>
+        <p class="service-p blue">Increase your credibility by getting the most stunning, high-quality 
+          photos that improve your business image.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section class="testimonials" id="testimonials">
+    <h2 class="testimonial-h2">Client testimonials</h2>
+
+    <div class="testimonials-grid">
+
+      <div class="testimonial-client">
+        <div class="client-img-box">
+          <img src="images/image-emily.jpg" alt="client emily" class="client-img">
+        </div>
+        <p class="client-text">We put our trust in Sunnyside and they delivered, making sure our 
+          needs were met and deadlines were always hit.
+        </p>
+        <h4 class="client-name">Emily R.</h4>
+        <p class="client-title">Marketing Director</p>
+
+      </div>
+
+      <div class="testimonial-client">
+        <div class="client-img-box">
+          <img src="images/image-thomas.jpg" alt="client Thomas" class="client-img">
+        </div>
+        <p class="client-text">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s 
+          success made it a satisfying and enjoyable experience.
+        </p>
+        <h4 class="client-name">Thomas S.</h4>
+        <p class="client-title">Chief Operating Officer</p>
+
+      </div>
+
+      <div class="testimonial-client">
+        <div class="client-img-box">
+          <img src="images/image-jennie.jpg" alt="client Jennie" class="client-img">
+        </div>
+        <p class="client-text">Incredible end result! Our sales increased over 400% when we worked with
+           Sunnyside. Highly recommended!
+        </p>
+        <h4 class="client-name">Jennie F.</h4>
+        <p class="client-title">Business Owner</p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Project Section -->
+  <section class="projects" id="projects">
+    <div class="project-img-box">
+      <a href="#">
+        <picture>
+          <source media="(max-width: 768px)" srcset="images/mobile/image-gallery-milkbottles.jpg">
+          <source media="(min-width: 769px)" srcset="images/desktop/image-gallery-milkbottles.jpg">
+
+          <img src="images/mobile/image-gallery-milkbottles.jpg" alt="milk bottles" class="project-img">
+        </picture>
+      </a>
+    </div>
+
+    <div class="project-img-box">
+      <a href="#">
+        <picture>
+          <source media="(max-width: 768px)" srcset="images/mobile/image-gallery-orange.jpg">
+          <source media="(min-width: 769px)" srcset="images/desktop/image-gallery-orange.jpg">
+
+          <img src="images/mobile/image-gallery-orange.jpg" alt="orange" class="project-img">
+        </picture>
+      </a>
+    </div>
+
+    <div class="project-img-box">
+      <a href="#">
+        <picture>
+          <source media="(max-width: 768px)" srcset="images/mobile/image-gallery-cone.jpg">
+          <source media="(min-width: 769px)" srcset="images/desktop/image-gallery-cone.jpg">
+
+          <img src="images/mobile/image-gallery-cone.jpg" alt="cone" class="project-img">
+        </picture>
+      </a>
+    </div>
+
+    <div class="project-img-box">
+      <a href="#">
+        <picture>
+          <source media="(max-width: 768px)" srcset="images/mobile/image-gallery-sugar-cubes.jpg">
+          <source media="(min-width: 769px)" srcset="images/desktop/image-gallery-sugarcubes.jpg">
+
+          <img src="images/mobile/image-gallery-sugar-cubes.jpg" alt="sugar cubes" class="project-img">
+        </picture>
+      </a>
+    </div>
+  </section>
+
+    <!-- Footer Section -->
+  <footer>
+    <div class="footer-brand">
+      <img src="images/logo.svg" alt="Sunnyside Logo">
+    </div>
+    <ul class="footer-nav">
+      <li>
+        <a href="#about">About</a>
+      </li>
+      <li>
+        <a href="#services">Services</a>
+      </li>
+      <li>
+        <a href="#projects">Projects</a>
+      </li>
+    </ul>
+
+    <div class="social-links">
+      <a href="#">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </a>
+      <a href="#">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+      <a href="#">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </a>
+      <a href="#">
+        <ion-icon name="logo-pinterest"></ion-icon>
+      </a>
+    </div>
+
+
+    <div class="attribution">
+      Bootcamp 2024 by
+      <a href="https://www.mlab.co.za" target="_blank">CodeTribe</a>. Developed
+      by <a href="#">Portia Mashaba</a>.
+    </div>
+
+  </footer>
+
+</div>
+
+
+<script></script>
+  <!-- Javascript -->
+  <script src="script.js"></script>
+</body>
+</html>
+
+<!-- Source Frontend Mentor: https://www.frontendmentor.io -->
